@@ -1,0 +1,47 @@
+.dropDown {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  > a {
+    flex-grow: 1;
+  }
+}
+
+button.expand {
+  background: transparent;
+  border: 0;
+  color: #5f5f5f;
+  height: 1.5rem;
+  width: 1.5rem;
+  padding: 0;
+  position: relative;
+
+  > :not(:last-child) {
+    position: absolute;
+  }
+
+  > .disappear {
+    transition: opacity 300ms cubic-bezier(0, 0, 0, 1);
+
+    &.hidden {
+      opacity: 0;
+    }
+  }
+}
+
+.linkList {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1em;
+  overflow-y: hidden;
+  transition: height 300ms cubic-bezier(0, 0, 0, 1);
+
+  > a {
+    margin: 0.25em 0;
+  }
+
+  > a:first-child {
+    margin-top: 0.75em;
+  }
+}

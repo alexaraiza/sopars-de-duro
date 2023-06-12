@@ -1,0 +1,28 @@
+.tags {
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+
+  > form {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.875rem;
+    overflow-y: scroll;
+
+    > div {
+      align-items: center;
+      display: flex;
+      padding: 0.25em 0.5em 0.25em 0;
+
+      > label {
+        width: 100%;
+      }
+
+      > input {
+        height: 1.5em;
+        margin: 0;
+        width: 1.5em;
+      }
+    }
+  }
+}

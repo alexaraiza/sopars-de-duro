@@ -1,0 +1,15 @@
+.image {
+  float: right;
+  height: 100%;
+  margin: 0 0 2em 0;
+  max-height: 325px;
+  object-fit: contain;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .image {
+    margin: 0 0 2em 2em;
+    width: 50%;
+  }
+}

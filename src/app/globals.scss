@@ -1,0 +1,184 @@
+body,
+input,
+textarea,
+button {
+  font-family: 'Playfair Display', serif;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+
+  > * {
+    display: block;
+    margin: auto;
+    max-width: max(720px, 50%);
+  }
+
+  > article {
+    margin-bottom: calc(7.5vw - 60px);
+    padding: 1.5em;
+
+    > p:first-child {
+      margin-top: 0;
+    }
+
+    > p:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  > input[type='search'] {
+    width: calc(100% - 3em);
+
+    &:first-child {
+      margin-top: 1.5em;
+    }
+  }
+
+  > .grid {
+    display: grid;
+    gap: 3em;
+    grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
+    margin: 3em auto;
+  }
+
+  > input[type='search'],
+  > .grid {
+    max-width: calc(360px + 50%);
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.0625em;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 2.25rem;
+  margin: 1.5em auto;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.875rem;
+  margin-top: 1.875em;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-top: 1.5em;
+}
+
+h4 {
+  font-size: 1.375rem;
+}
+
+h5 {
+  font-size: 1rem;
+  margin: 1em 0;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: #3f7fbf;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 125ms cubic-bezier(0, 0, 0, 1);
+}
+
+button {
+  cursor: pointer;
+
+  &[type='submit'] {
+    background: #3f7fbf;
+    border: 0;
+    color: #fff;
+    padding: 0.375em 0.75em;
+    transition: background 125ms cubic-bezier(0, 0, 0, 1);
+
+    &:hover {
+      background: #1f3f5f;
+    }
+  }
+}
+
+input,
+textarea {
+  border: max(1px, 0.05em) solid #bfbfbf;
+  border-radius: 0.2em;
+  padding: 0.5em;
+}
+
+form input,
+form textarea {
+  background: #f7f7f7;
+}
+
+form.stacked {
+  > div {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5em 0;
+
+    > label {
+      margin-bottom: 0.25em;
+
+      > span {
+        color: #5f5f5f;
+        font-size: 0.8em;
+      }
+    }
+  }
+}
+
+ul,
+ol {
+  padding: 0;
+}
+
+ul {
+  list-style: inside square;
+}
+
+ol {
+  list-style: inside decimal;
+}
+
+li {
+  margin: 1em 0;
+}
+
+figcaption {
+  color: #5f5f5f;
+  font-size: 0.875em;
+  margin-top: 0.5em;
+}
+
+.emoji {
+  height: 1em;
+  width: 1em;
+}
