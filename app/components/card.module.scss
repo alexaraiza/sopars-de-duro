@@ -1,0 +1,18 @@
+.card {
+  color: initial;
+
+  > h4 {
+    margin: 0.25em 1em;
+    text-align: center;
+  }
+
+  > img {
+    height: auto;
+    transition: transform 300ms cubic-bezier(0, 0, 0, 1), opacity 0.25s linear;
+    width: 100%;
+  }
+
+  &:hover > img {
+    transform: scale(1.1) translateY(-4%);
+  }
+}

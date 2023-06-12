@@ -1,0 +1,13 @@
+.nav {
+  > * {
+    margin: 1em 0;
+  }
+
+  a {
+    padding-right: 3rem;
+
+    &:hover {
+      color: #1f3f5f;
+    }
+  }
+}
